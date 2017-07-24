@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Bootstrap CSS -->
     <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="select2/css/select2.css" rel="stylesheet">
     <!-- Font-Awesome Icons -->
     <link href="font_awesome/css/font-awesome.css" rel="stylesheet">
     <!-- Semantic CSS -->
@@ -533,8 +534,6 @@
                             <div id="student-academic-details" class="dashboard-content panel panel-default ">
 
 
-
-
                                 <!-- add Modal -->
                                 <div class="modal fade bs-example-modal-lg" id="add-myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog modal-lg" role="document">
@@ -610,10 +609,58 @@
                                                         </div>
 
                                                         <div class="col-md-12">
+
+                                                            Select Institutions
+                                                            <form id="form2">
+
+
+                                                                <select  class="js-example-responsive" style="width: 100%" id="multiSpec"   multiple="multiple" >
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WV">West Virginia</option>
+                                                                    <option value="a">West Virginia</option>
+                                                                    <option value="b">West Virginia</option>
+                                                                    <option value="c">West Virginia</option>
+                                                                    <option value="d">West Virginia</option>
+                                                                    <option value="e">West Virginia</option>
+                                                                    <option value="f">West Virginia</option>
+                                                                    <option value="g">West Virginia</option>
+                                                                    <option value="h">West Virginia</option>
+                                                                    <option value="i">West Virginia</option>
+                                                                </select>
+
+                                                                <input type="button" id="btngetSpec" value="Select Some Institutions" />
+
+                                                                <script>
+                                                                    $(document).ready(function() {
+                                                                        $("#multiSpec").select2({
+                                                                            placeholder: "Specializatoins",
+                                                                            allowClear: true
+                                                                        });
+                                                                    });
+
+                                                                    $('#btngetSpec').click(function() {
+
+                                                                        alert($('#multiSpec').val());
+
+                                                                    })
+                                                                </script>
+
+                                                            </form>
+
+                                                        </div>
+
+
+                                                        <div class="col-md-12">
                                                             <div class="input">
                                                                 <input type="text" class="inputBox"  placeholder="Program Description">
                                                             </div><!-- /input-group -->
                                                         </div>
+
+
+
+
 
 
                                                     </div>
@@ -708,11 +755,58 @@
                                                             </select>
                                                         </div>
 
+
+                                                        <div class="col-md-12">
+
+                                                            Select Institutions
+                                                            <form id="form3">
+
+
+                                                                <select  class="js-example-responsive" style="width: 100%" id="multiSpecEd"   multiple="multiple" >
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WV">West Virginia</option>
+                                                                    <option value="a">West Virginia</option>
+                                                                    <option value="b">West Virginia</option>
+                                                                    <option value="c">West Virginia</option>
+                                                                    <option value="d">West Virginia</option>
+                                                                    <option value="e">West Virginia</option>
+                                                                    <option value="f">West Virginia</option>
+                                                                    <option value="g">West Virginia</option>
+                                                                    <option value="h">West Virginia</option>
+                                                                    <option value="i">West Virginia</option>
+                                                                </select>
+
+                                                                <input type="button" id="btngetSpecEd" value="Get Specializations" />
+
+                                                                <script>
+                                                                    $(document).ready(function() {
+                                                                        $("#multiSpecEd").select2({
+                                                                            placeholder: "Specializatoins",
+                                                                            allowClear: true
+                                                                        });
+                                                                    });
+
+                                                                    $('#btngetSpec').click(function() {
+
+                                                                        alert($('#multiSpecEd').val());
+
+                                                                    })
+                                                                </script>
+
+                                                            </form>
+
+                                                        </div>
+
                                                         <div class="col-md-12">
                                                             <div class="input">
                                                                 <input type="text" class="inputBox"  placeholder="Program Description">
                                                             </div><!-- /input-group -->
                                                         </div>
+
+
+
 
 
                                                     </div>
@@ -814,6 +908,11 @@
                                                         <div class="info col-md-6">
                                                             <div class="item_info">
                                                                 <div class="llabel"> <i class="home icon"></i> Internship  </div> <span>Yes</span> </div>
+                                                        </div>
+
+                                                        <div class="info col-md-6">
+                                                            <div class="item_info">
+                                                                <div class="llabel"> <i class="home icon"></i> Specializatoin  </div> <span>Specialization 1, Specialization 2, Specializaton 3...</span> </div>
                                                         </div>
 
                                                         <div class="col-md-12">
@@ -1018,6 +1117,8 @@
 <script src="js/script.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/bootstrap.js"></script>
+<script src="select2/js/select2.js"></script>
+
 
 </body>
 </html>
