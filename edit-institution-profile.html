@@ -534,6 +534,106 @@
 
 
 
+
+                                <!-- add Modal -->
+                                <div class="modal fade bs-example-modal-lg" id="add-myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title">Add Program</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+
+
+                                                    <div class="row">
+
+
+                                                        <div class="col-md-6 selectFull">
+                                                            <select class="ui search dropdown" >
+                                                                <option value="#">Level</option>
+                                                                <option value="arts">Bachelors</option>
+                                                                <option value="it">Masters</option>
+                                                                <option value="management">Training</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-6 selectFull">
+                                                            <select class="ui search dropdown col-md-6">
+                                                                <option value="">Program</option>
+                                                                <option value="#">B.Sc.CSIT</option>
+                                                                <option value="#">BBA</option>
+                                                            </select>
+                                                        </div>
+
+
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Number of Students">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Head of Department">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+
+
+
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Scholarship Quota">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Total Fee">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Admission Date">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+                                                        <div class="col-md-6 selectFull">
+                                                            <select class="ui search dropdown col-md-6">
+                                                                <option value="">Internship</option>
+                                                                <option value="#">Yes</option>
+                                                                <option value="#">No</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Program Description">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+
+                                                <div >
+                                                    <a href="#">
+                                                        <input  data-toggle="modal" data-target="#editProgram-myModal" type="button" class="applyBtn" value="Edit">
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Edit Modal -->
                                 <div class="modal fade bs-example-modal-lg" id="editProgram-myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog modal-lg" role="document">
@@ -572,6 +672,15 @@
                                                                 <input type="text" class="inputBox"  placeholder="Number of Students">
                                                             </div><!-- /input-group -->
                                                         </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="input">
+                                                                <input type="text" class="inputBox"  placeholder="Head of Department">
+                                                            </div><!-- /input-group -->
+                                                        </div>
+
+
+
 
                                                         <div class="col-md-6">
                                                             <div class="input">
@@ -631,9 +740,27 @@
                                     Academic Details
                                 </div>
 
+                                <div class="col-md-12">
+                                    <a href="#">
+                                        <input style="margin-top: 15px;" data-toggle="modal" data-target="#add-myModal"  type="button" class="applyBtn" value="Add Program">
+                                    </a>
+                                </div>
+                                <!-- add --->
+
+
+                                <br/>
+                                <br/>
+
+                                <br/>   <br/>
+
+
                                 <div class="panel-body"  id="programs" >
 
+
+
                                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin: 0;">
+
+
 
                                         <div class="panel panel-default" style="margin: 0;">
                                             <div class="panel-heading" role="tab" id="headingOne">
@@ -662,6 +789,12 @@
                                                             <div class="item_info">
                                                                 <div class="llabel"> <i class="home icon"></i> Number of Students </div> <span>10000</span> </div>
                                                         </div>
+
+                                                        <div class="info col-md-6">
+                                                            <div class="item_info">
+                                                                <div class="llabel"> <i class="home icon"></i> Head of Department </div> <span>10000</span> </div>
+                                                        </div>
+
 
                                                         <div class="info col-md-6">
                                                             <div class="item_info">
